@@ -17,16 +17,14 @@ const HeaderButton = (props) => (
             backgroundColor: props.btnColor,
             paddingVertical: 6,
             paddingHorizontal: 16,
-            borderRadius: 30,marginRight:10
-        }}
-    >
+            borderRadius: 30, marginRight: 10
+        }}>
         <Text
             style={{
                 color: props.textColor,
                 fontSize: 15,
                 fontWeight: "900"
-            }}
-        >{props.text}</Text>
+            }}>{props.text}</Text>
     </TouchableOpacity>
 )
 
