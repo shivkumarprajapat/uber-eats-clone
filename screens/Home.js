@@ -3,6 +3,7 @@ import HeaderTab from '../components/HeaderTab'
 import { SafeAreaView, View } from 'react-native'
 import SearchBar from '../components/SearchBar'
 import Categories from '../components/Categories'
+import { ScrollView } from 'react-native-gesture-handler'
 export default function Home() {
     return (
 
@@ -13,7 +14,9 @@ export default function Home() {
                 <HeaderTab />
                 <SearchBar />
             </View>
+            <ScrollView showsVerticalScrollIndicator={false}>
             <Categories/>
+            </ScrollView>
         </SafeAreaView>
     )
 }
